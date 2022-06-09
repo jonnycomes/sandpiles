@@ -32,9 +32,7 @@ layout_edit = [[sg.Input(
                     visible=True if row < height and col < width else False,
                     background_color=colors[0],
                     text_color='white',
-                    font='ariel 40',
-                    expand_x = True,
-                    expand_y = True) 
+                    font='ariel 40') 
                 for col in range(WIDTH)] for row in range(HEIGHT)] 
 
 layout_topple = [[sg.Text(
@@ -132,7 +130,7 @@ while True:
         # Show cells for editing and hide cells for toppling
         window['-TOPPLE-GRID-'].update(visible=False)
         window['-EDIT-GRID-'].update(visible=True)
-    if event in ('-TOPPLE1x1-', '-TOPPLE-ALL-'):
+    if event == '-TOPPLE1x1-':
         mode = '-TOPPLE1x1-'
         # Hide cells for editing and show cells for toppling
         window['-TOPPLE-GRID-'].update(visible=True)
