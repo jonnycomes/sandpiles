@@ -3,7 +3,7 @@ Sandpile Toppler
 
 This is a Python app for toppling sandpiles corresponding to rectangular grids in the [Abelian sanpile model](https://en.wikipedia.org/wiki/Abelian_sandpile_model). 
 
-# Resources
+# Resources to learn the mathematics of sandpiles
 
 - [Numberphile on sandpiles](https://www.youtube.com/watch?v=1MtEUErz7Gg)
 - [Divisors and Sandpiles: An Introduction to Chip-Firing](https://www.amazon.com/Divisors-Sandpiles-Introduction-Chip-Firing-Monograph/dp/1470442183/ref=sr_1_2?crid=1Y8LQ26EGRCPT&keywords=sandpile+math&qid=1654744830&sprefix=sandpile+math%2Caps%2C161&sr=8-2), by Scott Corry and David Perkinson
