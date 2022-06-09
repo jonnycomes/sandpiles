@@ -57,7 +57,8 @@ layout = [  [
                           default_value=3, 
                           orientation='horizontal'),
                 sg.Push(),
-                sg.Button('topple all', key='-TOPPLE-ALL-')
+                sg.Button('topple all', key='-TOPPLE-ALL-'),
+                sg.Button('add 3 to all', key='-ADD3-')
             ],                
             [
                 sg.Text('height', font='ariel 16'),
@@ -67,14 +68,14 @@ layout = [  [
                           default_value=3,
                           orientation='horizontal'),
                 sg.Push(),
-                sg.Button('add 3 to all', key='-ADD3-')
+                sg.Button('get identity', key='-GET-ID-'),
+                sg.Button('set all 0', key='-SET0-')
             ],
             [
                 sg.Text('mode:', font='ariel 16'), 
                 sg.Button('Edit', key='-EDIT-', disabled_button_color=mode_color), 
                 sg.Button('Topple', key='-TOPPLE1x1-', disabled_button_color=mode_color), 
-                sg.Push(),
-                sg.Button('set all 0', key='-SET0-')
+                sg.Push()
             ],
             [
                 sg.Col(layout_edit, key='-EDIT-GRID-'), 
@@ -124,6 +125,8 @@ while True:
         piles = [[0 for col in range(width)] for row in range(height)]
     if event == '-ADD3-':
         piles = [[3 + piles[row][col] for col in range(width)] for row in range(height)]
+    if event == '-GET-ID-':
+        piles = sandpile.get_identity(width, height)
     if event == '-EDIT-':
         mode = '-EDIT-'
         # Show cells for editing and hide cells for toppling
