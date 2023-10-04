@@ -1,6 +1,6 @@
 # Sandpile Toppler
 
-This is a python app for toppling sandpiles corresponding to rectangular grids in the [Abelian sandpile model](https://en.wikipedia.org/wiki/Abelian_sandpile_model). 
+This is a python app for toppling sandpiles corresponding to rectangular grids in the [abelian sandpile model](https://en.wikipedia.org/wiki/Abelian_sandpile_model). 
 
 ## Resources to learn the mathematics of sandpiles
 
