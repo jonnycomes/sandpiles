@@ -83,6 +83,7 @@ layout = [  [
 
 window = sg.Window('Sandpile Toppler', layout, finalize=True)
 
+
 # initialize mode
 mode = '-EDIT-'
 window[mode].update(disabled=True)

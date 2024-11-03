@@ -2,6 +2,8 @@
 
 This is a python app for toppling sandpiles corresponding to rectangular grids in the [Abelian sanpile model](https://en.wikipedia.org/wiki/Abelian_sandpile_model). 
 
+![Image of the app](sandpile5x5.jpg)
+
 ## Resources to learn the mathematics of sandpiles
 
 - [Numberphile on sandpiles](https://www.youtube.com/watch?v=1MtEUErz7Gg)
